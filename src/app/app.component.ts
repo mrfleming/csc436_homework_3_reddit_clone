@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reddit-app';
+
+  addArticle(title:HTMLInputElement, link:HTMLInputElement): boolean {
+    console.log(`Adding content... title : ${title.value} and link : ${link.value}`);
+    return false;
+  }
 }
