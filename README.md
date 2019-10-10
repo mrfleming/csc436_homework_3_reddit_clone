@@ -1,5 +1,9 @@
 # RedditApp
 
+## Homework Assignment 3
+
+I wrote the stories in the text file.  I put it in the assests folder because I thought early on the stories would be used in the actual application.  I was able to get the button for the admin to appear with *ngIf.  I did also get the button to fire the event which sends it to the last item in the list.  I had it go through all of the articles, pull out the vote numbers, then sort them and pull the smallest one.  For some reason this only seems to work on the initial load and when you change the vote counts of the other articles, this information is not seen by the flag button.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
 ## Development server
