@@ -1,0 +1,19 @@
+Stories about the Reddit Clone
+
+1. As a user, I want to up-vote an article, so that the article recieves more attention on the website.
+
+2. As a user, I want to down-vote an article, so that the article does not receive as much attention on the website.
+
+3. As a user, I want to submit an article, so that it can receive attention on the website because I find it valuable.
+
+4. As a user, I want my articles to be sorted, so that I can spend my time efficiently looking at the most up-voted content.
+
+5. As an administrator, I want to comment on an article, so that I can inform the user of a violations in their article.
+
+6. As an administrator, I want to alter an articles votes, so that I can push an article to the bottom of the list.
+
+7. As an administrator, I want to set an article for automatic removal in a time period x, so that I do not have to manually keep track of all violations.
+
+8. As an administrator, I want to remove an article from the list, so that I can properly enforce violating content.
+
+9. As an administrator, I want to ban a user for 1 week of posting if violations are not resolved, so that I can properly enforce violations.

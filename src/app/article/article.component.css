@@ -1,0 +1,17 @@
+.up{
+    background-color: #21BA45;
+    color: white;
+}
+
+.down{
+    background-color: crimson;
+    color: white;
+}
+
+.item > a {
+    color: black;
+}
+
+.item > a:hover {
+    font-weight: 600;
+}
