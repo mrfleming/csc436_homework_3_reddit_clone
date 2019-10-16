@@ -37,11 +37,10 @@ export class Article {
     }
 
     domain(): string {
-        try{
+        try {
             const domainAndPath: string = this.link.split('//')[1];
             return domainAndPath.split('/')[0];
-        }
-        catch(err){
+        } catch (err) {
             return null;
         }
     }

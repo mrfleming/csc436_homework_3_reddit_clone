@@ -6,17 +6,13 @@ import { ArticleService } from '../article.service';
   selector: 'app-article',
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css'],
-  providers: [ArticleService]
 })
 export class ArticleComponent implements OnInit {
 
   @HostBinding('attr.class') cssClass = 'row';
   @Input() article: Article;
-  service: ArticleService;
 
-  constructor(service: ArticleService) {
-    this.service = service;
-  }
+  constructor(private service: ArticleService) {}
 
   voteUp(): boolean {
     this.article.voteUp();
@@ -32,9 +28,10 @@ export class ArticleComponent implements OnInit {
     return this.article.getVotes();
   }
 
-  flagArticle(): void{
-    const theMinVote = this.service.getLowestVote();
-    this.article.setVote(theMinVote-1);
+  flagArticle(a: Article): boolean {
+    console.log(`Flagging ${a.title}`);
+    this.service.setToMinimumVote(a);
+    return false;
   }
 
   hyperVoteDown(): boolean {

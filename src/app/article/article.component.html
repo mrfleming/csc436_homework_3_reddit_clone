@@ -27,7 +27,7 @@
             </a>
         </li>
         <li class="item" *ngIf="article.isAdmin()">
-            <a (click)="flagArticle()">
+            <a (click)="flagArticle(this.article)">
                 <b>FLAG!</b>
             </a>
         </li>
