@@ -17,6 +17,9 @@ export class ArticleService {
 
     voteList.sort((x, y) => x - y);
     min = voteList[0];
-    a.votes = min - 1;
+
+    if (a.votes > min) {
+      a.votes = min - 1;
+    }
   }
 }
